@@ -1,0 +1,92 @@
+.nawabpur-shop { position: fixed; inset: 0; z-index: 110; background: #211e1a; color: #26211d; padding: 0 1.2vw 1.2vh; font-family: 'Manrope',Arial,sans-serif; }
+.nawabpur-shop * { box-sizing: border-box; }
+.nawabpur-shop button,.nawabpur-shop select,.nawabpur-shop a { -webkit-tap-highlight-color: transparent; }
+.nawabpur-shop button { cursor: pointer; }
+.nawabpur-shop button:focus-visible,.nawabpur-shop a:focus-visible,.nawabpur-shop select:focus-visible,.nawabpur-story-scroll:focus-visible { outline: 2px solid #9f6e42; outline-offset: 3px; }
+.nawabpur-toolbar { height: 7vh; min-height: 44px; display: flex; align-items: center; justify-content: space-between; color: #f2ebdd; padding: 0 1.5%; }
+.nawabpur-toolbar button { background: none; border: 0; color: inherit; font: 500 clamp(12px,1vw,16px) 'Manrope',sans-serif; }
+.nawabpur-toolbar .nawabpur-wordmark { font: 500 clamp(24px,2.5vw,40px) 'Cormorant Garamond',Georgia,serif; letter-spacing: .3em; padding-left: .3em; }
+.nawabpur-book { height: calc(100% - max(7vh,44px)); display: grid; grid-template-columns: 1fr 1fr; width: 100%; border-radius: 3px; box-shadow: 0 12px 40px #0008; animation: nawabpur-reveal .65s ease both; perspective: 1800px; }
+.nawabpur-page { position: relative; min-width: 0; min-height: 0; background: #f2ebdd; padding: 3.5% 5% 2%; display: flex; flex-direction: column; }
+.nawabpur-reading { box-shadow: inset -18px 0 22px -18px #37271565; border-radius: 3px 0 0 3px; }
+.nawabpur-buying { box-shadow: inset 18px 0 22px -18px #37271565; border-radius: 0 3px 3px 0; }
+.nawabpur-running { display: flex; justify-content: space-between; align-items: center; gap: 15px; font-size: clamp(9px,.72vw,12px); font-weight: 600; letter-spacing: .2em; color: #521e22; padding-bottom: 16px; border-bottom: 1px solid #a28d6a88; }
+.nawabpur-running span { font-size: .8em; }
+.nawabpur-story-scroll,.nawabpur-product-scroll { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #a28d6a66 transparent; flex: 1; min-height: 0; padding-right: 12px; }
+.nawabpur-story-scroll h1 { font: italic 500 clamp(34px,4.2vw,66px)/1 'Cormorant Garamond',Georgia,serif; color: #521e22; margin: 22px 0 26px; }
+.nawabpur-story { display: grid; grid-template-columns: 64% 1fr; gap: 5%; align-items: center; margin-bottom: 24px; }
+.nawabpur-story.is-reversed { grid-template-columns: 1fr 64%; margin-top: 28px; }
+.nawabpur-story.is-reversed .nawabpur-story-image { grid-column: 2; grid-row: 1; }
+.nawabpur-story.is-reversed .nawabpur-story-copy { grid-column: 1; grid-row: 1; }
+.nawabpur-story-image { display: block; padding: 0; border: 0; background: none; position: relative; }
+.nawabpur-story-image img { display: block; width: 100%; height: auto; aspect-ratio: 1.05; object-fit: cover; object-position: center 35%; }
+.nawabpur-story-image[aria-pressed=true]::after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 -3px #521e22; pointer-events: none; }
+.nawabpur-selected { font: italic 400 clamp(10px,.85vw,13px) 'Manrope',sans-serif; color: #521e22; }
+.nawabpur-story h2 { font: 500 clamp(25px,2.5vw,40px)/1 'Cormorant Garamond',Georgia,serif; color: #521e22; margin: 22px 0; }
+.nawabpur-story p,.nawabpur-passage p { font-size: clamp(12px,1.05vw,16px); line-height: 1.6; }
+.nawabpur-text-link { padding: 12px 0 5px; border: 0; border-bottom: 1px solid #a28d6a; background: none; color: #521e22; text-align: left; font: 500 clamp(14px,1.2vw,19px) 'Cormorant Garamond',Georgia,serif; }
+.nawabpur-passage h3 { font: italic 500 clamp(27px,2.5vw,40px)/1.1 'Cormorant Garamond',Georgia,serif; color: #521e22; margin: 18px 0 10px; }
+.nawabpur-passage p { margin: 0; }
+.nawabpur-end { margin: 30px 0; font-size: 12px; }
+.nawabpur-end button { background: none; border: 0; color: #521e22; text-decoration: underline; }
+.nawabpur-folio { display: flex; justify-content: space-between; border-top: 1px solid #a28d6a88; padding-top: 12px; margin-top: 12px; font: 500 14px 'Cormorant Garamond',Georgia,serif; color: #521e22; }
+.nawabpur-product-scroll { padding-top: 26px; }
+.nawabpur-product-grid { display: grid; grid-template-columns: 54% 1fr; gap: 5%; align-items: start; animation: nawabpur-product .25s ease both; }
+.nawabpur-product-image { width: 100%; display: block; }
+.nawabpur-product-copy h2 { font: 500 clamp(36px,4.2vw,68px)/.85 'Cormorant Garamond',Georgia,serif; color: #521e22; margin: 0 0 12px; }
+.nawabpur-product-copy p { font-size: clamp(12px,.94vw,15px); line-height: 1.6; margin: 14px 0; }
+.nawabpur-product-copy .nawabpur-product-category { font-size: 9px; letter-spacing: .22em; }
+.nawabpur-product-copy .nawabpur-price { font-size: clamp(20px,1.9vw,30px); color: #521e22; font-weight: 600; margin: 18px 0; }
+.nawabpur-size-label { font-size: 12px; display: block; margin: 20px 0 8px; }
+.nawabpur-product-copy select { width: 100%; padding: 10px 6px; background: #f2ebdd; border: 1px solid #a28d6a; color: #26211d; font: 12px 'Manrope',sans-serif; }
+.nawabpur-product-copy small { font-size: 10px; line-height: 1.5; display: block; margin-top: 8px; color: #71665a; }
+.nawabpur-colour { display: flex; align-items: center; gap: 10px; }
+.nawabpur-colour span { width: 26px; height: 26px; border: 1px solid #a28d6a; }
+.nawabpur-quantity { display: flex; justify-content: space-between; gap: 5px; align-items: center; font-size: 12px; margin: 16px 0; }
+.nawabpur-quantity > div { display: flex; align-items: center; border: 1px solid #a28d6a; }
+.nawabpur-quantity button { border: 0; background: none; color: #521e22; padding: 6px 10px; font-size: 16px; }
+.nawabpur-quantity button:disabled { opacity: .35; cursor: default; }
+.nawabpur-quantity output { min-width: 20px; text-align: center; }
+.nawabpur-add { width: 100%; background: #521e22; border: 1px solid #521e22; color: #f2ebdd; padding: 14px 8px; font: 500 11px 'Manrope',sans-serif; letter-spacing: .15em; }
+.nawabpur-add:hover { background: #732d31; }
+.nawabpur-product-copy .nawabpur-notice { font-size: 11px; color: #521e22; margin: 8px 0; }
+.nawabpur-store-link { color: #521e22; font-size: 11px; text-underline-offset: 4px; }
+.nawabpur-product-note { font: italic 500 clamp(23px,2vw,32px)/1.15 'Cormorant Garamond',Georgia,serif; color: #521e22; margin: 28px 0; }
+.nawabpur-product-scroll details { border-top: 1px solid #a28d6a88; padding: 14px 0; font-size: 12px; line-height: 1.7; }
+.nawabpur-product-scroll summary { cursor: pointer; font: 500 20px 'Cormorant Garamond',Georgia,serif; color: #521e22; }
+.nawabpur-bag { position: absolute; top: max(7vh,44px); right: 1.2vw; width: min(420px,95vw); max-height: 85vh; overflow-y: auto; padding: 24px; background: #f2ebdd; border: 1px solid #a28d6a; box-shadow: -10px 15px 45px #0005; z-index: 5; }
+.nawabpur-bag header { display: flex; align-items: center; justify-content: space-between; }
+.nawabpur-bag h2 { font: 500 32px 'Cormorant Garamond',Georgia,serif; color: #521e22; margin: 0; }
+.nawabpur-bag header button { font-size: 26px; background: none; border: 0; }
+.nawabpur-bag p,.nawabpur-bag a,.nawabpur-bag article button { font-size: 12px; line-height: 1.6; }
+.nawabpur-bag article { display: grid; grid-template-columns: 90px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid #a28d6a66; }
+.nawabpur-bag img { width: 90px; }
+.nawabpur-bag h3 { margin: 0; font: 500 26px 'Cormorant Garamond',Georgia,serif; }
+.nawabpur-bag a { color: #521e22; }
+.nawabpur-bag article button { display: block; margin-top: 10px; border: 0; background: none; padding: 0; text-decoration: underline; }
+.nawabpur-mobile-tabs { display: none; }
+@keyframes nawabpur-reveal { from { opacity: 0; transform: perspective(1800px) rotateY(-7deg) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes nawabpur-product { from { opacity: .3; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+@media(max-width: 800px) {
+ .nawabpur-shop { padding: 0 8px 8px; }
+ .nawabpur-toolbar { height: 52px; }
+ .nawabpur-mobile-tabs { height: 38px; display: flex; justify-content: center; gap: 16px; }
+ .nawabpur-mobile-tabs button { border: 0; border-bottom: 2px solid transparent; color: #d8cdbd; background: none; font: 11px 'Manrope',sans-serif; }
+ .nawabpur-mobile-tabs button[aria-pressed=true] { border-color: #d8cdbd; color: #fff; }
+ .nawabpur-book { height: calc(100% - 90px); display: block; }
+ .nawabpur-page { height: 100%; padding: 20px 16px 12px; }
+ .nawabpur-mobile--read .nawabpur-buying,.nawabpur-mobile--shop .nawabpur-reading { display: none; }
+ .nawabpur-story { grid-template-columns: 60% 1fr; gap: 5%; }
+ .nawabpur-story.is-reversed { grid-template-columns: 1fr 60%; }
+ .nawabpur-story h2 { font-size: 28px; margin: 12px 0; }
+ .nawabpur-story-scroll h1 { font-size: 46px; }
+ .nawabpur-story p { font-size: 12px; }
+ .nawabpur-product-grid { grid-template-columns: 48% 1fr; gap: 5%; }
+ .nawabpur-product-copy h2 { font-size: 45px; }
+ .nawabpur-product-copy .nawabpur-price { font-size: 22px; }
+ .nawabpur-product-copy p { font-size: 12px; }
+ .nawabpur-product-copy .nawabpur-product-category { font-size: 8px; }
+ .nawabpur-quantity { flex-wrap: wrap; }
+ .nawabpur-product-note { font-size: 26px; }
+}
+@media(prefers-reduced-motion: reduce) { .nawabpur-book,.nawabpur-product-grid { animation: none; } }

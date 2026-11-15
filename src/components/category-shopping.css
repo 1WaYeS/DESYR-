@@ -1,0 +1,49 @@
+.shopping-theme { --shop-paper: #f2ebdd; --shop-ink: #26211d; --shop-accent: #521e22; --shop-rule: #a28d6a; --shop-display: 'Cormorant Garamond',Georgia,serif; container-type: inline-size; background: var(--shop-paper); color: var(--shop-ink); }
+.shopping-theme--gorur-ghash { --shop-paper: #f6f6ef; --shop-ink: #101c30; --shop-accent: #245834; --shop-rule: #a7b39b; --shop-display: 'Manrope',Arial,sans-serif; }
+.shopping-theme--wrongs-and-rebels { --shop-paper: #f1f1ef; --shop-ink: #151515; --shop-accent: #74222e; --shop-rule: #a6a6a0; --shop-display: Impact,'Arial Narrow',sans-serif; }
+.shopping-theme .nawabpur-running,.shopping-theme .nawabpur-folio { color: var(--shop-accent); border-color: var(--shop-rule); }
+.shopping-theme .nawabpur-running { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.7cqw; flex-shrink: 0; }
+.shopping-theme .nawabpur-running span { white-space: nowrap; }
+.flip-magazine .shopping-theme.nawabpur-page { color: var(--shop-ink); background: var(--shop-paper); }
+.flip-magazine .shopping-theme h1 { font-family: var(--shop-display); color: var(--shop-accent); font-size: clamp(28px,7cqw,52px); }
+.shopping-theme .nawabpur-story h2 { font-family: var(--shop-display); color: var(--shop-accent); font-size: clamp(21px,4.4cqw,32px); line-height: 1.02; overflow-wrap: anywhere; }
+.shopping-theme .nawabpur-story p { font-size: clamp(11px,2.3cqw,14px); line-height: 1.5; }
+.shopping-theme .nawabpur-selected { color: var(--shop-accent); font-size: clamp(9px,1.9cqw,12px); }
+.shopping-theme .nawabpur-story-image[aria-pressed=true]::after { box-shadow: inset 0 -3px var(--shop-accent); }
+.shopping-theme .nawabpur-story-image img { object-position: center top; }
+.shopping-theme .nawabpur-passage h3,.shopping-theme .nawabpur-product-note { font-family: var(--shop-display); color: var(--shop-accent); }
+.shopping-theme .nawabpur-text-link,.shopping-theme .nawabpur-store-link,.shopping-theme summary { color: var(--shop-accent); border-color: var(--shop-rule); }
+.flip-magazine .shopping-theme .nawabpur-product-copy h2 { font: 500 clamp(26px,7.5cqw,48px)/.98 var(--shop-display); color: var(--shop-accent); overflow-wrap: anywhere; }
+.shopping-theme .nawabpur-product-copy p { font-size: clamp(11px,2.3cqw,14px); }
+.shopping-theme .nawabpur-product-copy .nawabpur-price { color: var(--shop-accent); font-size: clamp(20px,5cqw,29px); }
+.shopping-theme .nawabpur-product-copy select { background: var(--shop-paper); color: var(--shop-ink); border-color: var(--shop-rule); }
+.shopping-theme .nawabpur-add { background: var(--shop-accent); border-color: var(--shop-accent); color: var(--shop-paper); }
+.shopping-theme .nawabpur-add:hover { filter: brightness(1.15); }
+.shopping-theme .nawabpur-quantity button { color: var(--shop-accent); }
+.shopping-theme .nawabpur-quantity > div,.shopping-theme details { border-color: var(--shop-rule); }
+.shopping-theme .nawabpur-notice { color: var(--shop-accent); }
+.shopping-theme .nawabpur-story-scroll,.shopping-theme .nawabpur-product-scroll { scrollbar-color: var(--shop-rule) transparent; }
+.shopping-theme--gorur-ghash .nawabpur-story-scroll h1 { font-style: normal; font-weight: 800; letter-spacing: -.06em; }
+.shopping-theme--gorur-ghash .nawabpur-story-scroll h1::after { content: ''; display: block; width: 25%; height: 5px; background: #ccef45; margin-top: 14px; }
+.shopping-theme--gorur-ghash .nawabpur-story h2 { font-weight: 800; letter-spacing: -.04em; }
+.flip-magazine .shopping-theme--gorur-ghash .nawabpur-product-copy h2 { font-size: clamp(23px,6.2cqw,38px); font-weight: 700; overflow-wrap: normal; letter-spacing: -.04em; }
+.shopping-theme--gorur-ghash .nawabpur-text-link,.shopping-theme--gorur-ghash .nawabpur-folio,.shopping-theme--gorur-ghash summary { font-family: 'Manrope',Arial,sans-serif; font-size: 12px; }
+.shopping-theme--wrongs-and-rebels .nawabpur-text-link,.shopping-theme--wrongs-and-rebels .nawabpur-folio { font-family: 'Manrope',Arial,sans-serif; font-size: 12px; }
+.flip-magazine--gorur-ghash .flip-magazine-title { font: 800 clamp(17px,1.8vw,28px) 'Manrope',Arial,sans-serif; letter-spacing: -.03em; }
+.flip-magazine--wrongs-and-rebels .flip-magazine-title { font: 800 clamp(17px,1.8vw,28px) 'Syne',Arial,sans-serif; letter-spacing: -.03em; }
+.shopping-theme--gorur-ghash .nawabpur-passage h3,.shopping-theme--gorur-ghash .nawabpur-product-note { font-style: normal; font-weight: 700; letter-spacing: -.04em; font-size: 5cqw; }
+.shopping-theme--gorur-ghash .nawabpur-add { background: #183a26; color: #f6f6ef; }
+.shopping-theme--wrongs-and-rebels .nawabpur-story-scroll h1 { font-style: normal; text-transform: uppercase; color: #111; letter-spacing: -.02em; }
+.shopping-theme--wrongs-and-rebels .nawabpur-story h2,.shopping-theme--wrongs-and-rebels .nawabpur-product-copy h2 { text-transform: uppercase; color: #111; }
+.shopping-theme--wrongs-and-rebels .nawabpur-passage h3,.shopping-theme--wrongs-and-rebels .nawabpur-product-note { font-style: normal; text-transform: uppercase; color: #151515; font-size: 5.5cqw; }
+.shopping-theme--wrongs-and-rebels .nawabpur-add { background: #151515; border-color: #151515; color: #fff; }
+.category-shopping-controller .nawabpur-bag { color: #26211d; background: #f2ebdd; }
+.category-shopping-controller.shopping-theme--gorur-ghash .nawabpur-bag { color: #101c30; background: #f6f6ef; }
+.category-shopping-controller.shopping-theme--wrongs-and-rebels .nawabpur-bag { color: #151515; background: #f1f1ef; }
+
+/* A quiet styling entry; the existing editorial and shopping geometry stays intact. */
+.shopping-theme .complete-look-entry { display: block; width: fit-content; padding: 2px 0 3px; margin: 10px 0 14px; border: 0; border-bottom: 2px solid #ccef45; background: none; color: var(--shop-accent); font: 600 12px 'Manrope',Arial,sans-serif; text-align: left; cursor: pointer; }
+.shopping-theme .complete-look-note { font-size: 12px; line-height: 1.6; }
+.shopping-theme .complete-look-back { display: block; margin: 12px 0; cursor: pointer; }
+
+.shopping-theme--wrongs-and-rebels .complete-look-entry { border-bottom-color: #74222e; }

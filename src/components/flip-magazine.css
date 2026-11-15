@@ -1,0 +1,55 @@
+.flip-magazine { position: fixed; inset: 0; z-index: 110; background: #171513; color: #eee5d7; padding: 0 1.5vw; display: flex; flex-direction: column; font-family: 'Manrope',Arial,sans-serif; }
+.flip-magazine-toolbar { height: 7vh; min-height: 48px; display: flex; align-items: center; gap: 18px; padding: 0 1%; }
+.flip-magazine-toolbar button { color: inherit; background: none; border: 0; cursor: pointer; font: 12px 'Manrope',sans-serif; }
+.flip-magazine-title { font: 500 clamp(19px,2vw,30px) 'Cormorant Garamond',Georgia,serif; letter-spacing: .16em; margin: auto; }
+.flip-magazine-actions:empty { display: none; }
+.flip-magazine-toolbar > button:last-child { font-size: 26px; }
+.flip-magazine-slot { flex: 1; min-height: 0; position: relative; width: 100%; }
+.flip-magazine-engine { width: 100%; height: 100%; margin: auto; }
+.flip-magazine-page { background: #f2ebdd; overflow: hidden; }
+.flip-magazine-page .edition { box-sizing: border-box; }
+.flip-magazine-navigation { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px; padding: 10px 0 3px; }
+.flip-magazine-navigation button { color: #ded5c9; background: none; border: 1px solid #ffffff30; font: 10px 'Manrope',Arial,sans-serif; padding: 7px 12px; cursor: pointer; }
+.flip-magazine-navigation button[aria-current=page] { color: #241b16; background: #eee5d7; }
+.flip-magazine-navigation button:disabled { opacity: .3; cursor: default; }
+.flip-magazine-hint { text-align: center; font-size: 9px; color: #b1a89c; margin: 4px 0 8px; }
+.flip-magazine button:focus-visible,.flip-magazine a:focus-visible,.flip-magazine select:focus-visible { outline: 2px solid #b88b5d; outline-offset: 3px; }
+.flip-magazine .nawabpur-shop--embedded { position: static; padding: 0; background: none; }
+.flip-magazine .nawabpur-page { height: 100%; box-sizing: border-box; color: #26211d; }
+.flip-magazine .nawabpur-product-scroll { padding-top: 20px; }
+.flip-magazine .nawabpur-product-grid { grid-template-columns: 50% 1fr; }
+.flip-magazine .nawabpur-page h1 { font-size: clamp(32px,4vw,65px); }
+.flip-magazine .nawabpur-bag { z-index: 120; right: 2vw; }
+.flip-magazine .nawabpur-story-scroll,.flip-magazine .nawabpur-product-scroll { touch-action: pan-y; }
+.flip-category-content { color: #26211d; background: #f2ebdd; padding: 5%; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; }
+.flip-category-content header,.flip-category-content footer { display: flex; justify-content: space-between; font-size: 10px; letter-spacing: .12em; color: #521e22; border-bottom: 1px solid #a28d6a; padding-bottom: 14px; }
+.flip-category-content footer { border-bottom: 0; border-top: 1px solid #a28d6a; padding: 12px 0 0; }
+.flip-category-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; scrollbar-width: thin; }
+.flip-category-content h1 { font: 500 clamp(28px,3.4vw,54px)/1 'Cormorant Garamond',Georgia,serif; color: #521e22; margin: 25px 0; }
+.flip-category-content p { font-size: 13px; line-height: 1.6; }
+.flip-category-hero { display: block; width: 100%; max-height: 72%; object-fit: contain; object-position: top; }
+.flip-category-content a { color: inherit; }
+.flip-product { display: grid; grid-template-columns: 45% 1fr; gap: 20px; align-items: center; padding: 18px 0; text-decoration: none; border-top: 1px solid #a28d6a55; }
+.flip-product img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+.flip-product > span { display: grid; gap: 12px; font-size: 13px; }
+.flip-product strong { font: 500 24px 'Cormorant Garamond',serif; }
+.flip-product em { font-size: 11px; text-decoration: underline; }
+.flip-category-content--gorur-ghash { background: #f6f6f2; }
+.flip-category-content--wrongs-and-rebels { background: #f4f4f2; }
+.flip-category-content--wrongs-and-rebels h1 { font-family: Impact,'Arial Narrow',sans-serif; color: #161616; }
+.flip-category-content--gorur-ghash h1 { font-family: Arial,sans-serif; font-weight: 800; color: #173522; }
+@media(max-width:800px) {
+ .flip-magazine { padding: 0 8px; }
+ .flip-magazine-toolbar { gap: 8px; }
+ .flip-magazine-toolbar button { font-size: 10px; }
+ .flip-magazine-title { font-size: 17px; letter-spacing: .09em; }
+ .flip-magazine-navigation { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; }
+ .flip-magazine-navigation button { white-space: nowrap; padding: 7px 9px; font-size: 9px; }
+ .flip-magazine .nawabpur-page { padding: 18px 16px 12px; }
+ .flip-magazine .nawabpur-product-copy h2 { font-size: 42px; }
+}
+
+.flip-magazine-actions .magazine-cart { display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-width: 38px; min-height: 38px; padding: 4px; }
+.magazine-cart-count { font: 600 10px 'Manrope',Arial,sans-serif; }
+.flip-magazine-navigation .flip-magazine-home { border-color: #b9a78b; color: #f0e7d8; }
+@media(max-width:800px) { .flip-magazine-toolbar { gap: 6px; } .flip-magazine-toolbar > button:first-child { max-width: 30%; text-align: left; } .flip-magazine-actions .magazine-cart { min-width: 30px; } }

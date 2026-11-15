@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:size": "node scripts/test-size-recommendation.cjs",
+    "test:alerts": "node scripts/test-price-alerts.cjs"
   },
   "dependencies": {
     "page-flip": "^2.0.7",

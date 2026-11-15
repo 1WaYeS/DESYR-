@@ -1,0 +1,58 @@
+/* DESYR: a quiet clothing still life with live, interactive magazine covers. */
+.desyr-header { align-items: flex-start; }
+.site-logo.desyr-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; padding: 0; letter-spacing: 0; color: #f2eee5; }
+.desyr-logo__word { display: block; font: 800 clamp(29px,3vw,46px)/.85 'Syne',Arial,sans-serif; letter-spacing: -.06em; }
+.desyr-logo__caption { font: 500 8px/1 'Manrope',Arial,sans-serif; letter-spacing: .43em; padding-left: 2px; }
+.desyr-nav { text-transform: none; font: 500 12px 'Manrope',Arial,sans-serif; letter-spacing: 0; padding-top: 3px; gap: 30px; }
+.desyr-nav .site-nav__link { text-shadow: 0 2px 10px #000; }
+.desyr-nav .site-nav__menu { z-index: 10; }
+.stage .stage__backdrop { filter: saturate(.86) contrast(1.02) brightness(1); }
+.stage .stage__vignette { background: radial-gradient(ellipse at 65% 55%,transparent 48%,#00000029 100%),linear-gradient(90deg,#00000012,transparent 26%); }
+.stage__garment-tag { position: absolute; z-index: 55; left: 13%; top: 73%; width: 13%; aspect-ratio: 1.5; padding: 1.5% 1.1% .9%; transform: perspective(700px) rotateX(22deg) rotateZ(-12deg) skewX(3deg); background-color: #c7bcaa; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.23' filter='url(%23grain)'/%3E%3C/svg%3E"),repeating-linear-gradient(0deg,#ffffff14 0 1px,#564c3c0d 1px 2px),repeating-linear-gradient(90deg,transparent 0 1px,#332b1e15 1px 2px),linear-gradient(135deg,#d3c9b7,#b9ad97); color: #171713; border: 1px solid #a99b83; border-radius: 11px 4px 4px 4px; box-shadow: inset 0 0 0 1px #e1d7c34d, inset 0 -2px 2px #54453450, 1px 3px 2px #0009, 4px 9px 12px #0008; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: filter .25s, transform .25s; }
+.stage__garment-tag::before { content: ''; position: absolute; inset: 5px; border: 1px dashed #776a513b; border-radius: 7px 2px 2px; pointer-events: none; }
+.stage__tag-cord { position: absolute; width: 52%; height: 150%; left: -7%; bottom: calc(100% - 16px); overflow: visible; pointer-events: none; filter: drop-shadow(1px 2px 1px #0008); }
+.stage__tag-cord path { fill: none; stroke: #161714; stroke-width: 2.5; stroke-linecap: round; }
+.stage__tag-eyelet { position: absolute; width: 8px; height: 7px; top: 11px; left: 20%; background: #10110f; border: 1px solid #82755f; box-shadow: 0 0 0 1px #ded4bf75, inset 1px 1px 2px #000; border-radius: 50%; }
+.stage__garment-tag strong { font: 800 clamp(15px,1.5vw,23px)/1 'Syne',Arial,sans-serif; letter-spacing: -.065em; }
+.stage__garment-tag > span:not(.stage__tag-eyelet):not(.stage__tag-rule) { font: 600 clamp(6px,.65vw,10px) 'Manrope',Arial,sans-serif; letter-spacing: .08em; }
+.stage__tag-rule { width: 70%; height: 1px; background: #8f8370; opacity: .6; }
+.stage__garment-tag small { font: 600 clamp(5px,.45vw,8px) 'Manrope',Arial,sans-serif; letter-spacing: .035em; white-space: nowrap; }
+.stage__garment-tag:hover { filter: brightness(1.05); transform: perspective(700px) rotateX(20deg) rotateZ(-11deg) skewX(3deg) translateY(-1px); }
+.stage__garment-tag:focus-visible { outline: 2px solid #fff; outline-offset: 6px; }
+.stage__brand-picker { position: absolute; z-index: 75; left: 3vw; bottom: 12vh; width: min(330px,90vw); background: #191816f5; color: #eee7da; border: 1px solid #8b81714d; box-shadow: 0 15px 60px #0008; padding: 18px; backdrop-filter: blur(14px); }
+.stage__brand-picker header { display: flex; justify-content: space-between; align-items: center; font: 500 26px 'Cormorant Garamond',Georgia,serif; padding-bottom: 10px; }
+.stage__brand-picker header button { color: #eee7da; font-size: 24px; }
+.stage__brand-picker > button { display: grid; grid-template-columns: 1fr auto; gap: 8px; width: 100%; text-align: left; color: #eee7da; padding: 16px 0; border-top: 1px solid #ffffff25; }
+.stage__brand-picker > button > span:first-child { font: 600 13px 'Manrope',Arial,sans-serif; }
+.stage__brand-picker small { grid-column: 1; font-size: 9px; line-height: 1.6; color: #b8b2a7; }
+.stage__brand-picker > button > span:last-child { grid-column: 2; grid-row: 1/3; align-self: center; }
+.magazine__window-shadow { position: absolute; inset: -8%; z-index: 15; pointer-events: none; background: url('/images/cover-foliage-shadow.svg') center / 100% 100% no-repeat,linear-gradient(127deg,transparent 16%,#08090b22 18%,#08090b22 23%,transparent 26%,transparent 62%,#08090b1c 65%,#08090b1c 70%,transparent 73%); mix-blend-mode: multiply; opacity: .85; filter: blur(.7px); transform: translate(0,0) scale(1.04); transform-origin: center; transition: transform .65s var(--ease-editorial),opacity .65s ease,filter .65s ease; }
+.magazine--gorur-ghash .magazine__window-shadow { background-position: -22px 18px,0 0; }
+.magazine--wrongs-and-rebels .magazine__window-shadow { background-position: 25px -24px,0 0; opacity: .78; }
+.magazine.is-revealed .magazine__window-shadow { transform: translate(calc(5px + var(--window-shadow-x,0px)),calc(7px + var(--window-shadow-y,0px))) scale(1.07); opacity: .64; filter: blur(1.7px); }
+.magazine .magazine__lighting { transition: opacity .65s ease; }
+.magazine.is-revealed .magazine__lighting { opacity: .75; }
+@media(prefers-reduced-motion:reduce) {
+ .magazine__window-shadow,.magazine .magazine__lighting { transition: none; }
+ .magazine.is-revealed .magazine__window-shadow { transform: scale(1.04); }
+}
+.stage__mobile-wardrobe { display: none; }
+.desyr-story-scrim { position: fixed; inset: 0; z-index: 300; background: #000b; display: grid; place-items: center; padding: 24px; backdrop-filter: blur(8px); }
+.desyr-story { position: relative; width: min(520px,100%); background: #eee7db; color: #28231c; padding: 45px; box-shadow: 0 15px 80px #0008; }
+.desyr-story__close { position: absolute; top: 12px; right: 18px; font-size: 28px; }
+.desyr-story h2 { font: italic 500 45px/1 'Cormorant Garamond',Georgia,serif; margin: 28px 0 20px; }
+.desyr-story p { font: 13px/1.8 'Manrope',Arial,sans-serif; }
+.desyr-story__action { border-bottom: 1px solid #847661; padding: 10px 0; margin-top: 10px; font: 600 12px 'Manrope',Arial,sans-serif; }
+@media(max-width:768px) {
+ .desyr-logo__word { font-size: 29px; }
+ .desyr-logo__caption { font-size: 6px; letter-spacing: .3em; }
+ .desyr-nav { font-size: 10px; gap: 16px; }
+ .stage__garment-tag { top: 12%; left: 5%; width: 27%; padding: 20px 10px 9px; gap: 7px; }
+ .stage__garment-tag strong { font-size: 18px; }
+ .stage__garment-tag small { font-size: 5px; }
+ .stage__garment-tag > span:not(.stage__tag-eyelet):not(.stage__tag-rule) { font-size: 6px; }
+ .stage__mobile-wardrobe { display: block; position: absolute; top: 5%; left: 0; width: 38%; height: 29%; background: url('/images/desyr-silk-wardrobe-v2.png') left center / auto 100% no-repeat; mask-image: linear-gradient(90deg,#000 50%,transparent),linear-gradient(0deg,transparent,#000 25%,#000 80%,transparent); mask-composite: intersect; opacity: .8; }
+ .stage__brand-picker { left: 16px; bottom: 75px; }
+ .stage__prompt { max-width: calc(100vw - 32px); font-size: 8px; letter-spacing: .14em; }
+ .desyr-story { padding: 32px 25px; }
+}

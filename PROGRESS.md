@@ -163,3 +163,49 @@ Latest refinement: the user requested an independently scrolling magazine narrat
 Refined this same concept at the user's request with warm ivory, oxblood burgundy, muted brass rules, elegant Cormorant-style display serifs and clean sans-serif shopping text. This is the proposed Guzel editorial palette, not verified proprietary brand specifications. The scrolling-left/fixed-right composition remains unchanged; the latest output is still a mockup only.
 
 Implementation update: the user subsequently approved applying this concept. It is now implemented for Guzel > Nawabpur 26 in the files listed above. Earlier mockup-only notes describe the exploration stage. On shorter screens, the product page can scroll independently so purchasing controls and supporting information remain accessible. Public checkout, verified sizes and full collection inventory remain outstanding.
+
+### GitHub Pages configuration
+
+Configured relative Vite base and local image URLs, plus hash navigation for repository subpaths and refreshable collection links. Production build verified. Deployment instructions added to README.
+
+### 15 November 2026 — GoruGhash Complete the Look
+
+- Added the approved small link beneath Add to Bag for GoruGhash only; preserved existing category/interior styling and editorial/product columns.
+- Added a soft-paper styling spread after each GoruGhash category, with forward/back page turns, portrait navigation, history-aware hash routes and reduced-motion support.
+- Selected original product, size, quantity and page scroll remain mounted when visiting the style edit and returning.
+- Curated cross-brand pairing suggestions use existing Wrongs & Rebels catalog photos, prices and published sizes. Tops pair with denim; trousers pair with tops; customers can browse or swap suggestions. No AI API, live stock or checkout is claimed.
+- Pairings require a size, support quantity and add only the chosen pairing. The GoruGhash bag retains cross-brand products across reloads, displays the correct brand store links and supports existing remove controls. Other brand bags remain separate.
+- Verified production build and headless desktop/mobile browser flow: all three GoruGhash categories, correct routes, forward/back turns, source size/quantity preservation, missing-size validation, swap reset, persistent pairing bag, absence of feature in Guzel/WR, and no runtime exceptions.
+
+- Published production commit aef5a3b to gh-pages and confirmed GitHub Pages serves the new JavaScript bundle (HTTP 200).
+
+### 15 November 2026 — Rebels styling and magazine controls
+
+- Extended Complete the Look to all three Wrongs & Rebels categories with its existing black/burgundy palette and condensed typography. Pairings come from GoruGhash; GoruGhash pairings still come from WR. Guzel has no styling entry. Both participating bags retain cross-brand items and correct store links.
+- Replaced the top-right Bag text with a compact SVG basket, visible quantity and accessible name.
+- Disabled the engine mouse/touch handlers and hover page corners across all magazines. Surface hover, click and drag no longer turn or curl pages. Explicit navigation remains functional. Selecting a garment no longer auto-flips the mobile book.
+- Keyboard arrow keys and bottom Previous/Next controls turn pages; arrows work after using navigation buttons, preserve native form controls and pause while the bag is open. Reduced-motion settings apply to keyboard/button navigation too.
+- Added an All magazines homepage exit beneath every book and clarified the close control.
+- Verified desktop/mobile browser tests: no hover curl, surface click or drag flips across all three brands; arrow keys and footer controls; homepage exits; accessible basket and bag actions; all six GG/WR styling categories; saved size/quantity; required sizes, swap reset and cross-brand bag persistence; no runtime exceptions.
+- Published commit db0fe8f to gh-pages; verified the updated build is live with HTTP 200.
+
+### 15 November 2026 — Smart Size Recommendation in every magazine
+
+- Added Find my size beside all product and outfit-pairing size selectors without changing magazine structure. Brand-themed desktop right-page insert and mobile dialog; keyboard focus handling and page-shortcut isolation.
+- Implemented known garment/brand/size comparison with current fit, measured chest in cm/inches, height/weight estimate and desired fit. Product-specific charts avoid assuming a brand has one universal size chart. Apply requires explicit confirmation and updates only the relevant dropdown.
+- Added 12 official source-verified charts for GG/WR upper-body items, including source URLs/check dates and correct inch/full vs cm/half-width conversion. The PDF’s sample brand charts were not imported.
+- Guzel needs verified garment measurements; its panel explains this and cannot issue a made-up size. Trousers require separate waist/hip/inseam support. Live stock remains unconnected and is identified as such.
+- Added opt-in profile persistence and removal; data remains browser-local. Confidence is shown as a heuristic chart-match score, not a fit-accuracy guarantee.
+- Core logic/source checks pass: all 12 charts verified against official HTML, correct unit conversion, same-size round trips, monotonic sizes, minimum chest room, larger-size ties, listing/optional stock filtering, unknown/unsupported cases and invalid inputs.
+- Final end-to-end desktop/mobile checks pass: measured cm/in, height/weight estimate, known garment translation, explicit known-size requirement, invalid/oversized input, source and pairing dropdown application, optional profile saving/restoration/removal, unavailable Guzel/trouser cases, modal focus/keyboard isolation, viewport bounds and no runtime errors. Production build and repeatable npm test:size pass.
+- Published commit 73eda74 to gh-pages; confirmed GitHub Pages serves the smart size-finder bundle with HTTP 200.
+
+### 15 November 2026 — Personalized price drop alerts
+
+- Added brand-themed Notify me of a price drop links for every magazine and outfit pairing, plus bell access from the homepage and magazine toolbars. Built the approved two-page My Price Alerts watchlist/detail layout, filters, editing, pause/resume/delete, explicit new cycles and notification history; desktop/mobile layouts reviewed.
+- Public static site uses a clearly labelled device-only preview, with exact minor-unit price targets, persistence, duplicate-open-alert prevention, one-time simulated events and no fake sent-email claims.
+- Prepared the requested new Django backend rather than changing the React frontend stack. Added MySQL-ready models/migrations, Django user integration/verified identities, session/CSRF API, origin/rate controls, Decimal targets with half-up rounding, official-price audit history, snapshot-based task outbox and one event per alert. Customer prices are never trusted.
+- Celery delivery includes HTML/plain-text email, safe retries for rejected temporary failures, permanent rejection handling and UNKNOWN/manual review for ambiguous SMTP acceptance. Preview notifications never send email. Added production Docker/MySQL/Redis/worker/scheduler packaging and environment examples. No actual hosting, Redis, MySQL, SMTP credentials or brand feed were supplied or connected.
+- Executed: 24 Django tests (23 pass, 1 MySQL concurrency check skipped), migration drift/system checks, frontend price-rule tests, existing size-rule tests and production build. Headless desktop/mobile tests passed create/edit/reference preservation, independent thresholds, pause/resume/delete, preview history, storage, deep links, focus and page-key isolation.
+- Real local React-to-Django browser integration passed authentication/CSRF, verified identity, server-priced creation, authorized price changes, one recorded preview after further drops/rebounds, owner isolation, denied customer price edits, logout and session expiry. No external emails sent. Production MySQL/Redis/SMTP/Docker services remain unverified until provisioned.
+- Published preview commit ed2dbf6 to gh-pages. Confirmed HTTP 200 and ran a real browser smoke check on the deployed repository subpath: alert panel opens, target is correct, and no-email/browser-preview status is explicit. Temporary API test servers were stopped; the main local website server remains available.

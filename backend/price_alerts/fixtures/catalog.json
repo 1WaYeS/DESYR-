@@ -1,0 +1,242 @@
+[
+  {
+    "external_id": "wr-8301191004346",
+    "name": "W&R Range Check Shacket",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/w-r-range-check-shacket",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8301191004346.jpg",
+    "reference_price": "1899",
+    "current_price": "1899",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8349443457210",
+    "name": "W&R Coast Boxy Shirt",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/wr-coast-boxy-check-shirt",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8349443457210.jpg",
+    "reference_price": "1799",
+    "current_price": "1799",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8349525901498",
+    "name": "W&R Light Wash Fig T-shirt",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/wr-light-wash-fig-boxy-tshirt",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8349525901498.jpg",
+    "reference_price": "1399",
+    "current_price": "1399",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8349485105338",
+    "name": "W&R Yard Baggy Pants",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/wr-yard-baggy-denim-pants",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8349485105338.jpg",
+    "reference_price": "1899",
+    "current_price": "1899",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8349477273786",
+    "name": "W&R Harbour Baggy Pants",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/wr-harbour-baggy-denim-pants",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8349477273786.jpg",
+    "reference_price": "1899",
+    "current_price": "1899",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8349438050490",
+    "name": "W&R Moss Baggy Pants",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/wr-moss-baggy-denim-pants",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8349438050490.jpg",
+    "reference_price": "1899",
+    "current_price": "1899",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8301191495866",
+    "name": "W&R Vintage Olive Sweater",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/w-r-vintage-olive-sweater",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8301191495866.jpg",
+    "reference_price": "1999",
+    "current_price": "1999",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8301193265338",
+    "name": "W&R Windbreaker Jacket",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/w-r-windbreaker-jacket",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8301193265338.jpg",
+    "reference_price": "1999",
+    "current_price": "1999",
+    "is_live": false
+  },
+  {
+    "external_id": "wr-8301191987386",
+    "name": "W&R Blue Cat Feather Sweater",
+    "brand_id": "wrongs-and-rebels",
+    "product_url": "https://wrclo.com/products/w-r-blue-cat-feather-sweater",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-wr-8301191987386.jpg",
+    "reference_price": "1999",
+    "current_price": "1999",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-210906",
+    "name": "Diamond Knit Polo in Maroon",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/diamond-knit-polo-in-maroon/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-210906.jpg",
+    "reference_price": "1500",
+    "current_price": "1500",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-206658",
+    "name": "Unisex Horizontal Striped Knit Polo in Forest Green",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/unisex-horizontal-striped-knit-polo-in-forest-green/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-206658.jpg",
+    "reference_price": "1750",
+    "current_price": "1750",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-268128",
+    "name": "Unisex Henley Full Sleeve Textured T-shirt in Soft White",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/unisex-henley-full-sleeve-textured-t-shirt-in-soft-white/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-268128.jpg",
+    "reference_price": "900",
+    "current_price": "900",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-210609",
+    "name": "Half Sleeve Embroidered Boxy Shirt in Cream",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/half-sleeve-embroidered-boxy-shirt-in-cream/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-210609.jpg",
+    "reference_price": "1800",
+    "current_price": "1800",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-210603",
+    "name": "Half Sleeve Embroidered Boxy Shirt in Navy Blue",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/half-sleeve-embroidered-boxy-shirt-in-navy-blue/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-210603.jpg",
+    "reference_price": "1800",
+    "current_price": "1800",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-210519",
+    "name": "Men’s Full Sleeve Safari Shirt in Olive",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/mens-full-sleeve-safari-shirt-in-olive/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-210519.jpg",
+    "reference_price": "1600",
+    "current_price": "1600",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-267643",
+    "name": "Relaxed Fit Pants in Cream",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/relaxed-fit-pants-in-cream/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-267643.jpg",
+    "reference_price": "1800",
+    "current_price": "1800",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-267633",
+    "name": "Relaxed Fit Pants in Black",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/relaxed-fit-pants-in-black/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-267633.jpg",
+    "reference_price": "1800",
+    "current_price": "1800",
+    "is_live": false
+  },
+  {
+    "external_id": "gg-217330",
+    "name": "Baggy Fit Cargo Pants in Off-White",
+    "brand_id": "gorur-ghash",
+    "product_url": "https://gorurghash.com/product/baggy-fit-cargo-pants-in-off-white/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gg-217330.jpg",
+    "reference_price": "1500",
+    "current_price": "1500",
+    "is_live": false
+  },
+  {
+    "external_id": "gz-zayrish",
+    "name": "Zayrish",
+    "brand_id": "guzel",
+    "product_url": "https://guzeldesigner.studio/product/zayrish/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gz-zayrish.jpg",
+    "reference_price": "11000",
+    "current_price": "11000",
+    "is_live": false
+  },
+  {
+    "external_id": "gz-wahaj",
+    "name": "Wahaj",
+    "brand_id": "guzel",
+    "product_url": "https://guzeldesigner.studio/product/wahaj/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gz-wahaj.jpg",
+    "reference_price": "13000",
+    "current_price": "13000",
+    "is_live": false
+  },
+  {
+    "external_id": "gz-zaim",
+    "name": "Zaim",
+    "brand_id": "guzel",
+    "product_url": "https://guzeldesigner.studio/product/zaim/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/shop-gz-zaim.jpg",
+    "reference_price": "11000",
+    "current_price": "11000",
+    "is_live": false
+  },
+  {
+    "external_id": "dune",
+    "name": "Dune",
+    "brand_id": "guzel",
+    "product_url": "https://guzeldesigner.studio/product/dune/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/nawabpur-dune.jpeg",
+    "reference_price": "28000",
+    "current_price": "28000",
+    "is_live": false
+  },
+  {
+    "external_id": "grove",
+    "name": "Grove",
+    "brand_id": "guzel",
+    "product_url": "https://guzeldesigner.studio/product/grove/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/nawabpur-grove.jpeg",
+    "reference_price": "28000",
+    "current_price": "28000",
+    "is_live": false
+  },
+  {
+    "external_id": "luna",
+    "name": "Luna",
+    "brand_id": "guzel",
+    "product_url": "https://guzeldesigner.studio/product/luna/",
+    "image_url": "https://1wayes.github.io/DESYR-/images/nawabpur-luna.jpeg",
+    "reference_price": "27000",
+    "current_price": "27000",
+    "is_live": false
+  }
+]

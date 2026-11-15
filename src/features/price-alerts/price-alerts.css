@@ -1,0 +1,109 @@
+.price-alerts-bell { display:inline-flex;align-items:center;justify-content:center;gap:3px;min-height:36px;min-width:30px;color:inherit;background:none;border:0;cursor:pointer; }
+.price-alerts-bell span { font:600 10px 'Manrope',sans-serif; }
+.flip-magazine-actions { display:flex;align-items:center;gap:5px; }
+.price-drop-entry { display:flex;align-items:center;gap:6px;padding:0 0 3px;margin:-6px 0 15px;border:0;background:none;color:var(--shop-accent);font:500 11px/1.5 'Manrope',Arial,sans-serif;text-decoration:underline;text-underline-offset:4px;text-align:left;cursor:pointer; }
+.price-drop-entry svg { width:15px;height:15px;flex-shrink:0; }
+.price-alert-overlay { position:fixed;inset:0;z-index:185;font-family:'Manrope',Arial,sans-serif;color:#101c30; }
+.price-alert-overlay--create { display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;padding:7vh 3vw 8vh; }
+.price-alert-scrim { position:absolute;inset:0;background:linear-gradient(90deg,transparent 49%,#0003 51%); }
+.price-create-panel { --pa-paper:#f6f6ef;--pa-accent:#245834;--pa-ink:#101c30;--pa-rule:#a7b39b;--pa-display:'Manrope',Arial,sans-serif;position:relative;grid-column:2;width:min(580px,100%);max-height:83dvh;overflow-y:auto;overscroll-behavior:contain;background:var(--pa-paper);color:var(--pa-ink);border:1px solid var(--pa-rule);padding:28px;box-shadow:0 8px 30px #0003;scrollbar-width:thin; }
+.price-theme--guzel { --pa-paper:#f2ebdd;--pa-accent:#521e22;--pa-ink:#26211d;--pa-rule:#a28d6a;--pa-display:'Cormorant Garamond',Georgia,serif; }
+.price-theme--wrongs-and-rebels { --pa-paper:#f1f1ef;--pa-accent:#74222e;--pa-ink:#151515;--pa-rule:#a6a6a0;--pa-display:Impact,'Arial Narrow',sans-serif; }
+.price-alert-overlay * { box-sizing:border-box; }
+.price-create-panel header { display:flex;justify-content:space-between;align-items:start;gap:12px; }
+.price-create-panel h2 { font:700 28px/1.1 var(--pa-display);color:var(--pa-accent);margin:0; }
+.price-theme--guzel h2 { font-size:34px;font-weight:500; }
+.price-theme--wrongs-and-rebels h2 { font-weight:400;text-transform:uppercase; }
+.price-create-panel header button { border:0;background:none;font-size:24px;color:inherit;cursor:pointer;padding:0 3px; }
+.price-create-product { display:grid;grid-template-columns:90px 1fr;gap:18px;align-items:center;margin:20px 0; }
+.price-create-product img { width:90px;height:100px;object-fit:cover; }
+.price-create-product h3 { font:700 18px/1.2 var(--pa-display);margin:8px 0;color:var(--pa-accent); }
+.price-create-product span,.price-brand { font-size:10px;letter-spacing:.08em; }
+.price-alert-overlay p { font-size:13px;line-height:1.6; }
+.price-mode-note { border-left:2px solid var(--pa-accent,#245834);padding-left:10px;font-size:11px!important;line-height:1.6; }
+.price-create-prices { display:grid;grid-template-columns:1fr 1fr;gap:15px;border-top:1px solid var(--pa-rule);border-bottom:1px solid var(--pa-rule);padding:14px 0; }
+.price-create-prices dt { font-size:11px; }
+.price-create-prices dd { margin:7px 0 0;font-size:24px;font-weight:600;color:var(--pa-accent); }
+.price-create-panel fieldset { border:0;padding:0;margin:20px 0; }
+.price-create-panel legend { font-size:12px;margin-bottom:12px; }
+.price-discounts { display:flex;gap:7px;flex-wrap:wrap; }
+.price-discounts label { position:relative;flex:1;min-width:43px;border:1px solid var(--pa-rule);padding:9px 4px;text-align:center;cursor:pointer;font-size:13px; }
+.price-discounts input { position:absolute;opacity:0;width:1px;height:1px; }
+.price-discounts label:has(input:focus-visible) { outline:2px solid var(--pa-accent);outline-offset:3px; }
+.price-discounts label.is-selected { color:var(--pa-paper);background:var(--pa-accent);border-color:var(--pa-accent); }
+.price-create-panel .price-target { color:var(--pa-accent);font-size:20px;font-weight:600; }
+.price-small { font-size:11px!important; }
+.price-primary { width:100%;border:1px solid var(--pa-accent,#245834);padding:13px 10px;background:var(--pa-accent,#245834);color:var(--pa-paper,#f6f6ef);font:600 12px 'Manrope',Arial,sans-serif;cursor:pointer;margin-top:10px; }
+.price-primary:disabled { opacity:.5;cursor:default; }
+.price-signin label { display:block;margin:14px 0;font-size:12px; }
+.price-signin input { display:block;width:100%;border:1px solid var(--pa-rule,#a7b39b);background:transparent;color:inherit;padding:10px;margin-top:6px;font:13px 'Manrope',Arial,sans-serif; }
+.price-error { color:#74222e;font-size:12px!important; }
+.price-error:empty,.price-feedback:empty { display:none; }
+.price-feedback { color:#245834;font-size:12px!important; }
+.price-manager { position:absolute;inset:0;display:flex;flex-direction:column;padding:0 2vw 10px;background:#171513; }
+.price-manager-toolbar { min-height:56px;height:7vh;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#eee5d7; }
+.price-manager-toolbar strong { font-size:clamp(17px,2vw,28px);letter-spacing:-.03em; }
+.price-manager-toolbar button { background:none;border:0;color:inherit;font:12px 'Manrope',Arial,sans-serif;cursor:pointer; }
+.price-manager-toolbar button:last-child { font-size:25px; }
+.price-manager-book { flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;background:#f6f6ef;max-width:1500px;width:100%;margin:auto; }
+.price-manager-page { padding:4% 5% 2%;min-height:0;min-width:0;display:flex;flex-direction:column; }
+.price-manager-list { box-shadow:inset -18px 0 24px -18px #0008; }
+.price-manager-detail { box-shadow:inset 18px 0 24px -18px #0008; }
+.price-running { display:flex;justify-content:space-between;gap:10px;letter-spacing:.13em;font-size:10px;color:#245834;border-bottom:1px solid #a7b39b;padding-bottom:14px; }
+.price-manager-page h1 { font:800 clamp(30px,3.6vw,58px)/1 'Manrope',Arial,sans-serif;color:#245834;letter-spacing:-.05em;margin:25px 0 15px; }
+.price-manager-page h1:after { content:'';display:block;width:25%;height:4px;background:#ccef45;margin-top:16px; }
+.price-filters { display:flex;gap:15px;flex-wrap:wrap;margin:12px 0 20px; }
+.price-filters button { border:0;border-bottom:1px solid transparent;padding:2px 0;background:none;color:#245834;font:12px 'Manrope',Arial,sans-serif;cursor:pointer; }
+.price-filters button[aria-pressed=true] { border-bottom-color:currentColor;font-weight:800; }
+.price-alert-list { overflow-y:auto;overscroll-behavior:contain;flex:1;min-height:0;scrollbar-width:thin; }
+.price-alert-row { display:grid;grid-template-columns:110px 1fr;gap:20px;width:100%;text-align:left;align-items:center;border:0;border-bottom:1px solid #a7b39b;background:none;color:inherit;padding:18px 8px;cursor:pointer; }
+.price-alert-row.is-selected { box-shadow:inset 3px 0 #ccef45;background:#ccef450b; }
+.price-alert-row img { width:110px;height:120px;object-fit:cover; }
+.price-alert-row strong { display:block;font:700 clamp(17px,1.6vw,25px)/1.15 'Manrope',Arial,sans-serif;color:#245834; }
+.price-alert-row small { display:block;font-size:10px;margin:9px 0;line-height:1.5; }
+.price-status { display:inline-block;border:1px solid #a7b39b;color:#245834;font:500 11px 'Manrope',Arial,sans-serif;padding:4px 7px; }
+.price-status--paused { color:#71664f; }
+.price-status--triggered { background:#e1ebc7; }
+.price-detail-scroll { flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:22px;scrollbar-width:thin; }
+.price-detail-grid { display:grid;grid-template-columns:46% 1fr;gap:5%;align-items:start; }
+.price-detail-grid > img { width:100%;object-fit:contain; }
+.price-manager-page h2 { font:700 clamp(24px,2.6vw,38px)/1.04 'Manrope',Arial,sans-serif;color:#245834;margin:12px 0 18px;letter-spacing:-.04em; }
+.price-fields { font-size:12px;line-height:1.5; }
+.price-fields > div { display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid #a7b39b66;padding:10px 0; }
+.price-fields dd { margin:0;text-align:right;color:#245834;font-weight:700;white-space:nowrap; }
+.price-actions { display:flex;gap:14px;flex-wrap:wrap;margin:20px 0; }
+.price-actions button,.price-preview-tools button,.price-delete-confirm button,.price-account button { background:none;border:0;border-bottom:1px solid currentColor;padding:2px 0;color:#245834;font:12px 'Manrope',Arial,sans-serif;cursor:pointer; }
+.price-actions button:disabled { opacity:.5; }
+.price-preview-tools,.price-history-summary { margin:24px 0;padding-top:14px;border-top:1px solid #a7b39b; }
+.price-preview-tools h3,.price-history-summary h3 { color:#245834;font-size:19px;margin:0; }
+.price-preview-tools p,.price-history-summary small { font-size:11px;line-height:1.6; }
+.price-delete-confirm { border-left:2px solid #74222e;padding-left:12px; }
+.price-delete-confirm button { margin-right:15px;color:#74222e; }
+.price-shop-link { display:inline-block;color:#245834;text-underline-offset:4px;font-size:13px;padding:10px 0; }
+.price-manager-page > footer { border-bottom:0;border-top:1px solid #a7b39b;padding:12px 0 0;margin-top:12px; }
+.price-manager-controls { display:flex;gap:10px;justify-content:center;padding-top:10px; }
+.price-manager-controls button { padding:7px 12px;background:none;border:1px solid #ffffff40;color:#eee5d7;font:10px 'Manrope',Arial,sans-serif;cursor:pointer; }
+.price-history-product img { max-width:200px;max-height:240px;object-fit:contain; }
+.price-account { font-size:11px!important; }
+.price-mobile-back { display:none; }
+.price-alert-overlay :focus-visible { outline:2px solid var(--pa-accent,#245834);outline-offset:3px; }
+@media(max-width:800px) {
+ .price-alert-overlay--create { display:flex;justify-content:center;padding:12px; }
+ .price-alert-scrim { background:#0007; }
+ .price-create-panel { max-height:calc(100dvh - 24px);width:min(560px,100%);padding:22px 18px; }
+ .price-manager { padding:0 8px 8px; }
+ .price-manager-toolbar { gap:8px;min-height:54px; }
+ .price-manager-toolbar button:first-child { max-width:28%;font-size:10px;text-align:left; }
+ .price-manager-book { display:flex; }
+ .price-manager-page { width:100%;padding:20px 16px 12px; }
+ .price-manager-book.is-list .price-manager-detail,.price-manager-book.is-detail .price-manager-list { display:none; }
+ .price-mobile-back { display:block;align-self:start;margin:12px 0 0;background:none;border:0;border-bottom:1px solid currentColor;color:#245834;font:12px 'Manrope',Arial,sans-serif;cursor:pointer; }
+ .price-detail-grid { grid-template-columns:40% 1fr;gap:5%; }
+ .price-manager-page h2 { font-size:25px; }
+ .price-fields { font-size:11px; }
+ .price-fields > div { flex-wrap:wrap;gap:4px; }
+ .price-alert-row { grid-template-columns:90px 1fr;gap:15px; }
+ .price-alert-row img { width:90px;height:100px; }
+ .price-manager-page .price-mode-note { margin:6px 0; }
+ .price-filters { gap:12px;margin:12px 0; }
+}

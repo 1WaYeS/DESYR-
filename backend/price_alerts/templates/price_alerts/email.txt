@@ -1,0 +1,15 @@
+Hello,
+
+Your watched item has reached your DESYR price target.
+
+{{ note.product_name }}
+Reference price: BDT {{ note.reference_price }}
+Selected discount: {{ note.discount }}%
+Target price: BDT {{ note.target_price }}
+Selling price at notification: BDT {{ note.selling_price }}
+Actual discount: {{ actual_discount }}%
+
+Shop now: {{ note.product_url }}
+Manage alerts: {{ alerts_url }}
+
+This alert is complete. Further price drops will not send another notification.
