@@ -31,15 +31,22 @@ class ReadOnlyAdmin(admin.ModelAdmin):
     def has_delete_permission(self,request,obj=None):
         return False
 
+# Registering the PriceAlert model with the admin site using the AlertAdmin configuration class
 @admin.register(PriceAlert)
 class AlertAdmin(ReadOnlyAdmin):
+    # Defining the columns that appear in the admin list view table
     list_display = ('id','customer','product','discount','reference_price','target_price','status')
+    # Adding a sidebar filter box to easily filter records by their status
     list_filter = ('status',)
 
+# Registering the PriceEvent model with the admin site using the EventAdmin configuration class
 @admin.register(PriceEvent)
 class EventAdmin(ReadOnlyAdmin):
+    # Defining the columns that appear in the admin list view table
     list_display = ('id','product','kind','old_price','new_price','created_at','processed_at')
 
+# Registering the PriceNotification model with the admin site using the NotificationAdmin configuration class
 @admin.register(PriceNotification)
 class NotificationAdmin(ReadOnlyAdmin):
+    # Defining the fields to be displayed as columns in the admin list view
     list_display = ('id','alert','delivery_status','attempts','created_at')
